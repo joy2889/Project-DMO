@@ -1,5 +1,3 @@
 flask
 Flask
 Gunicorn
-firebase_admin
-datetime
