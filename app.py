@@ -2,6 +2,10 @@ from flask import Flask
 from flask import render_template, url_for, flash, redirect, request, Response
 from datetime import datetime
 import sqlite3
+import os
+
+print('Get current working directory :      ', os.getcwd())
+print('Get current file name :    ', __file__)
 
   
 app = Flask(__name__)
