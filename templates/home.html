@@ -7,7 +7,7 @@
 </head>
 <body bgcolor = 'papayawhip'>
 
-<br><br>
+
 <form id="form1" action="{{ url_for('handle_data') }}" method="post">
 
 	<label for="fname">Input String:</label><br>
@@ -17,8 +17,22 @@
 
 <br><button type="submit" form="form1" value="Submit">Submit</button>
 
+<form id="form2" action="{{ url_for('logs') }}" method="post">
 
-<p>{{data}}</p>
+<br><button type="submit" form="form2" value="View Logs">View Logs</button>
+
+</form>
+
+
+
+<p>{{data}}</p><br><br><br>
+
+
+<p>{{data2}}</p>
+{% autoescape off %}
+<p>{{data1}}</p><br><br><br>
+{% endautoescape %}
+
 
 </body>
 </html>
